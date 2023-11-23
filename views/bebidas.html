@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../assets/logo-social.png" alt="logo" class="logo">
+                </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"      data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="./vino.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Vinos
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./vino.html">Malbec</a></li>
+                            <li><a class="dropdown-item" href="./vino.html">Cabernet Sauvignon</a></li>
+                            <li><a class="dropdown-item" href="./vino.html">Chardonnay</a></li>
+                            <li><a class="dropdown-item" href="./vino.html">Torrontes</a></li>
+                            <li><a class="dropdown-item" href="./vino.html">Ver más</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="./whisky.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Whiskyes
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./whisky.html">Nacionales</a></li>
+                            <li><a class="dropdown-item" href="./whisky.html">Importados</a></li>
+                            <li><a class="dropdown-item" href="./whisky.html">Ver más</a></li>   
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="./espumante.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Espumantes
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./espumante.html">Extra Brut</a></li>
+                            <li><a class="dropdown-item" href="./espumante.html">Brut</a></li>
+                            <li><a class="dropdown-item" href="./espumante.html">Rosé</a></li>
+                            <li><a class="dropdown-item" href="./espumante.html">Ver más</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="./cerveza.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Cervezas
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./cerveza.html">Artesanales</a></li>
+                            <li><a class="dropdown-item" href="./cerveza.html">Nacionales</a></li>
+                            <li><a class="dropdown-item" href="./cerveza.html">Importadas</a></li>
+                            <li><a class="dropdown-item" href="./cerveza.html">Ver más</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="./bebidas.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Otras Bebidas
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./bebidas.html">Licores</a></li>
+                            <li><a class="dropdown-item" href="./bebidas.html">Vodka</a></li>
+                            <li><a class="dropdown-item" href="./bebidas.html">Ron</a></li>
+                            <li><a class="dropdown-item" href="./bebidas.html">Aperitivos</a></li>
+                            <li><a class="dropdown-item" href="./bebidas.html">Ver más</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+                <div class="nav-icon">
+                    <a href="../contact.html" class="icon-contact"><i class="fa-solid fa-user"></i></a>
+                    <a href="../carrito.html" class="icon-cart"><i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+            </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row">
+                <h2 class="m-5">Otras Bebidas</h2>
+            </div>
+            <div class="row">
+                <div class="col-3 my-5">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Filtrar por Marca
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                <div class="d-flex flex-column accordion-body">
+                                    <ul class="list-unstyled">
+                                    <li><a href="#" class="text-decoration-none">Marca</a></li>
+                                    <li><a href="#" class="text-decoration-none">Marca</a></li>
+                                    <li><a href="#" class="text-decoration-none">Marca</a></li>
+                                    <li><a href="#" class="text-decoration-none">Marca</a></li>
+                                    <li><a href="#" class="text-decoration-none">Marca</a></li>
+                                    <li><a href="#" class="text-decoration-none">Marca</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Filtrar por Variedad
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                <div class="d-flex flex-column accordion-body">
+                                    <ul class="list-unstyled">
+                                        <li><a href="#" class="text-decoration-none">Vodka</a></li>
+                                        <li><a href="#" class="text-decoration-none">Ron</a></li>
+                                        <li><a href="#" class="text-decoration-none">Licores</a></li>
+                                        <li><a href="#" class="text-decoration-none">Aperitivos</a></li>
+                                        <li><a href="#" class="text-decoration-none">Otros</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Filtrar por Precio
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                <div class="d-flex flex-column accordion-body">
+                                    <ul class="list-unstyled">
+                                        <li><a href="#" class="text-decoration-none">Menor Precio</a></li>
+                                        <li><a href="#" class="text-decoration-none">Mayor Precio</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-9 my-5">
+                    <div class="d-flex flex-wrap">
+                        <div class="col pb-2">
+                            <div class="col">
+                                <div class="card" style="width: 10rem;">
+                                    <img src="../assets/Otras/1o.webp" class="card-img-top" alt="otras-bebidas">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Absolut Vodka 700ml</h5>
+                                        <h5 class="card-title">$111111</h5>
+                                        <div class="d-flex justify-content-around">
+                                            <a href="#" class="text-decoration-none resta p-2">-</a>
+                                            <a href="#" class="text-decoration-none count p-2">0</a>
+                                            <a href="#" class="text-decoration-none suma p-2">+</a>
+                                        </div>
+                                        <button type="button" class="btn btn-primary w-75">Agregar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col pb-2">
+                            <div class="col">
+                                <div class="card" style="width: 10rem;">
+                                    <img src="../assets/Otras/1o.webp" class="card-img-top" alt="otras-bebidas">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Absolut Vodka 700ml</h5>
+                                        <h5 class="card-title">$111111</h5>
+                                        <div class="d-flex justify-content-around">
+                                            <a href="#" class="text-decoration-none resta p-2">-</a>
+                                            <a href="#" class="text-decoration-none count p-2">0</a>
+                                            <a href="#" class="text-decoration-none suma p-2">+</a>
+                                        </div>
+                                        <button type="button" class="btn btn-primary w-75">Agregar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col pb-2">
+                            <div class="col">
+                                <div class="card" style="width: 10rem;">
+                                    <img src="../assets/Otras/1o.webp" class="card-img-top" alt="otras-bebidas">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Absolut Vodka 700ml</h5>
+                                        <h5 class="card-title">$111111</h5>
+                                        <div class="d-flex justify-content-around">
+                                            <a href="#" class="text-decoration-none resta p-2">-</a>
+                                            <a href="#" class="text-decoration-none count p-2">0</a>
+                                            <a href="#" class="text-decoration-none suma p-2">+</a>
+                                        </div>
+                                        <button type="button" class="btn btn-primary w-75">Agregar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col pb-2">
+                            <div class="col">
+                                <div class="card" style="width: 10rem;">
+                                    <img src="../assets/Otras/1o.webp" class="card-img-top" alt="otras-bebidas">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Absolut Vodka 700ml</h5>
+                                        <h5 class="card-title">$111111</h5>
+                                        <div class="d-flex justify-content-around">
+                                            <a href="#" class="text-decoration-none resta p-2">-</a>
+                                            <a href="#" class="text-decoration-none count p-2">0</a>
+                                            <a href="#" class="text-decoration-none suma p-2">+</a>
+                                        </div>
+                                        <button type="button" class="btn btn-primary w-75">Agregar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col pb-2">
+                            <div class="col">
+                                <div class="card" style="width: 10rem;">
+                                    <img src="../assets/Otras/1o.webp" class="card-img-top" alt="otras-bebidas">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Absolut Vodka 700ml</h5>
+                                        <h5 class="card-title">$111111</h5>
+                                        <div class="d-flex justify-content-around">
+                                            <a href="#" class="text-decoration-none resta p-2">-</a>
+                                            <a href="#" class="text-decoration-none count p-2">0</a>
+                                            <a href="#" class="text-decoration-none suma p-2">+</a>
+                                        </div>
+                                        <button type="button" class="btn btn-primary w-75">Agregar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col pb-2">
+                            <div class="col">
+                                <div class="card" style="width: 10rem;">
+                                    <img src="../assets/Otras/1o.webp" class="card-img-top" alt="otras-bebidas">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Absolut Vodka 700ml</h5>
+                                        <h5 class="card-title">$111111</h5>
+                                        <div class="d-flex justify-content-around">
+                                            <a href="#" class="text-decoration-none resta p-2">-</a>
+                                            <a href="#" class="text-decoration-none count p-2">0</a>
+                                            <a href="#" class="text-decoration-none suma p-2">+</a>
+                                        </div>
+                                        <button type="button" class="btn btn-primary w-75">Agregar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col pb-2">
+                            <div class="col">
+                                <div class="card" style="width: 10rem;">
+                                    <img src="../assets/Otras/1o.webp" class="card-img-top" alt="otras-bebidas">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Absolut Vodka 700ml</h5>
+                                        <h5 class="card-title">$111111</h5>
+                                        <div class="d-flex justify-content-around">
+                                            <a href="#" class="text-decoration-none resta p-2">-</a>
+                                            <a href="#" class="text-decoration-none count p-2">0</a>
+                                            <a href="#" class="text-decoration-none suma p-2">+</a>
+                                        </div>
+                                        <button type="button" class="btn btn-primary w-75">Agregar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col pb-2">
+                            <div class="col">
+                                <div class="card" style="width: 10rem;">
+                                    <img src="../assets/Otras/1o.webp" class="card-img-top" alt="otras-bebidas">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Absolut Vodka 700ml</h5>
+                                        <h5 class="card-title">$111111</h5>
+                                        <div class="d-flex justify-content-around">
+                                            <a href="#" class="text-decoration-none resta p-2">-</a>
+                                            <a href="#" class="text-decoration-none count p-2">0</a>
+                                            <a href="#" class="text-decoration-none suma p-2">+</a>
+                                        </div>
+                                        <button type="button" class="btn btn-primary w-75">Agregar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col pb-2">
+                            <div class="col">
+                                <div class="card" style="width: 10rem;">
+                                    <img src="../assets/Otras/1o.webp" class="card-img-top" alt="otras-bebidas">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Absolut Vodka 700ml</h5>
+                                        <h5 class="card-title">$111111</h5>
+                                        <div class="d-flex justify-content-around">
+                                            <a href="#" class="text-decoration-none resta p-2">-</a>
+                                            <a href="#" class="text-decoration-none count p-2">0</a>
+                                            <a href="#" class="text-decoration-none suma p-2">+</a>
+                                        </div>
+                                        <button type="button" class="btn btn-primary w-75">Agregar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col pb-2">
+                            <div class="col">
+                                <div class="card" style="width: 10rem;">
+                                    <img src="../assets/Otras/1o.webp" class="card-img-top" alt="otras-bebidas">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Absolut Vodka 700ml</h5>
+                                        <h5 class="card-title">$111111</h5>
+                                        <div class="d-flex justify-content-around">
+                                            <a href="#" class="text-decoration-none resta p-2">-</a>
+                                            <a href="#" class="text-decoration-none count p-2">0</a>
+                                            <a href="#" class="text-decoration-none suma p-2">+</a>
+                                        </div>
+                                        <button type="button" class="btn btn-primary w-75">Agregar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col pb-2">
+                            <div class="col">
+                                <div class="card" style="width: 10rem;">
+                                    <img src="../assets/Otras/1o.webp" class="card-img-top" alt="otras-bebidas">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Absolut Vodka 700ml</h5>
+                                        <h5 class="card-title">$111111</h5>
+                                        <div class="d-flex justify-content-around">
+                                            <a href="#" class="text-decoration-none resta p-2">-</a>
+                                            <a href="#" class="text-decoration-none count p-2">0</a>
+                                            <a href="#" class="text-decoration-none suma p-2">+</a>
+                                        </div>
+                                        <button type="button" class="btn btn-primary w-75">Agregar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col pb-2">
+                            <div class="col">
+                                <div class="card" style="width: 10rem;">
+                                    <img src="../assets/Otras/1o.webp" class="card-img-top" alt="otras-bebidas">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Absolut Vodka 700ml</h5>
+                                        <h5 class="card-title">$111111</h5>
+                                        <div class="d-flex justify-content-around">
+                                            <a href="#" class="text-decoration-none resta p-2">-</a>
+                                            <a href="#" class="text-decoration-none count p-2">0</a>
+                                            <a href="#" class="text-decoration-none suma p-2">+</a>
+                                        </div>
+                                        <button type="button" class="btn btn-primary w-75">Agregar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col pb-2">
+                            <div class="col">
+                                <div class="card" style="width: 10rem;">
+                                    <img src="../assets/Otras/1o.webp" class="card-img-top" alt="otras-bebidas">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Absolut Vodka 700ml</h5>
+                                        <h5 class="card-title">$111111</h5>
+                                        <div class="d-flex justify-content-around">
+                                            <a href="#" class="text-decoration-none resta p-2">-</a>
+                                            <a href="#" class="text-decoration-none count p-2">0</a>
+                                            <a href="#" class="text-decoration-none suma p-2">+</a>
+                                        </div>
+                                        <button type="button" class="btn btn-primary w-75">Agregar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col pb-2">
+                            <div class="col">
+                                <div class="card" style="width: 10rem;">
+                                    <img src="../assets/Otras/1o.webp" class="card-img-top" alt="otras-bebidas">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Absolut Vodka 700ml</h5>
+                                        <h5 class="card-title">$111111</h5>
+                                        <div class="d-flex justify-content-around">
+                                            <a href="#" class="text-decoration-none resta p-2">-</a>
+                                            <a href="#" class="text-decoration-none count p-2">0</a>
+                                            <a href="#" class="text-decoration-none suma p-2">+</a>
+                                        </div>
+                                        <button type="button" class="btn btn-primary w-75">Agregar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col pb-2">
+                            <div class="col">
+                                <div class="card" style="width: 10rem;">
+                                    <img src="../assets/Otras/1o.webp" class="card-img-top" alt="otras-bebidas">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Absolut Vodka 700ml</h5>
+                                        <h5 class="card-title">$111111</h5>
+                                        <div class="d-flex justify-content-around">
+                                            <a href="#" class="text-decoration-none resta p-2">-</a>
+                                            <a href="#" class="text-decoration-none count p-2">0</a>
+                                            <a href="#" class="text-decoration-none suma p-2">+</a>
+                                        </div>
+                                        <button type="button" class="btn btn-primary w-75">Agregar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="row">
+              <div class="col">
+                <h3 class="title-footer">Categoria</h3>
+                <ul class="ul-footer">
+                    <li><a href="./vino.html">Vino</a></li>
+                    <li><a href="./whisky.html">Whiskyes</a></li>
+                    <li><a href="./espumante.html">Espumantes</a></li>
+                    <li><a href="./cerveza.html">Cervezas</a></li>
+                    <li><a href="./bebidas.html">Otra Bebidas</a></li>
+                </ul>
+              </div>
+              <div class="col">
+                <h3 class="title-footer">Contacto</h3>
+                <ul class="ul-footer icon-contacto">
+                    <li><i class="fa-regular fa-map"></i>Av. Francisco Beiró 2328, Devoto</li>
+                    <li><i class="fa-regular fa-flag"></i>Lunes a Viernes de 8 a 17Hs</li>
+                    <li><i class="fa-regular fa-envelope"></i>consultas@drinkshop.com.ar</li>
+                    <li><i class="fa-solid fa-mobile-screen-button"></i>11 6052 0721</li>
+                </ul>
+              </div>
+              <div class="col">
+                <h3>Seguinos</h3>
+                <div class="social-media">
+                    <a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.twitter.com"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
