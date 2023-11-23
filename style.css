@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    background-color: rgb(219, 216, 216);
+}
+
+/* NAVBAR */
+.logo{
+    width: 10rem;
+    height: 4rem;
+    border: 1px solid black;
+}
+
+.nav-icon{
+    display: flex;
+    margin-left: 1rem;
+}
+
+.icon-contact, .icon-cart{
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+/* SECCION CATALOGO */
+.catalogo-link{
+    text-decoration: none;
+    color: rgb(0,0,0);
+}
+
+.catalogo-link:hover{
+    color: rgb(230, 19, 19);
+    transition: 1s;
+}
+
+/*SECCION PAYMENT*/
+.icon-payment img{
+    width: 6rem;
+}
+
+.content-payment{
+    color: rgb(77, 70, 70);
+}
+
+
+/* FOOTER */
+footer{
+    background-color: rgba(24, 14, 14);
+    color: rgb(180, 176, 176);
+    padding-top: 2rem;
+}
+
+.ul-footer{
+    list-style: none;
+}
+
+.ul-footer li a{
+    text-decoration: none;
+    color: rgb(180, 176, 176);
+}
+
+.title-footer{
+    padding-left: 2rem;
+}
+
+.social-media a{
+    color: rgb(180, 176, 176);
+}
+
+.social-media i{
+    font-size: 2rem;
+    padding-right: 1rem;
+    margin-top: 1rem;
+}
+
+.icon-contacto li i{
+    padding-right: 1rem;
+}
+
