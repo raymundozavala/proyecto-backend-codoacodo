@@ -1,385 +1,389 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">
-                    <img src="./assets/logo-social.png" alt="logo" class="logo">
-                </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"      data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="./views/vino.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Vinos
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="./views/vino.html">Malbec</a></li>
-                            <li><a class="dropdown-item" href="./views/vino.html">Cabernet Sauvignon</a></li>
-                            <li><a class="dropdown-item" href="./views/vino.html">Chardonnay</a></li>
-                            <li><a class="dropdown-item" href="./views/vino.html">Torrontes</a></li>
-                            <li><a class="dropdown-item" href="./views/vino.html">Ver más</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="./views/whisky.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Whiskyes
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="./views/whisky.html">Nacionales</a></li>
-                            <li><a class="dropdown-item" href="./views/whisky.html">Importados</a></li>
-                            <li><a class="dropdown-item" href="./views/whisky.html">Ver más</a></li>   
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="./views/espumante.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Espumantes
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="./views/espumante.html">Extra Brut</a></li>
-                            <li><a class="dropdown-item" href="./views/espumante.html">Brut</a></li>
-                            <li><a class="dropdown-item" href="./views/espumante.html">Rosé</a></li>
-                            <li><a class="dropdown-item" href="./views/espumante.html">Ver más</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="./views/cerveza.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Cervezas
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="./views/cerveza.html">Artesanales</a></li>
-                            <li><a class="dropdown-item" href="./views/cerveza.html">Nacionales</a></li>
-                            <li><a class="dropdown-item" href="./views/cerveza.html">Importadas</a></li>
-                            <li><a class="dropdown-item" href="./views/cerveza.html">Ver más</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="./views/bebidas.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Otras Bebidas
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="./views/bebidas.html">Licores</a></li>
-                            <li><a class="dropdown-item" href="./views/bebidas.html">Vodka</a></li>
-                            <li><a class="dropdown-item" href="./views/bebidas.html">Ron</a></li>
-                            <li><a class="dropdown-item" href="./views/bebidas.html">Aperitivos</a></li>
-                            <li><a class="dropdown-item" href="./views/bebidas.html">Ver más</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-                <div class="nav-icon">
-                    <a href="./contact.html" class="icon-contact"><i class="fa-solid fa-user"></i></a>
-                    <a href="./carrito.html" class="icon-cart"><i class="fa-solid fa-cart-shopping"></i></a>
-                </div>
-            </div>
-            </div>
-        </nav>
-    </header>
-    <main>
-        <section class="carrousel">
-            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="./assets/HEINE.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="./assets/A.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="./assets/B.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="./assets/c.jpg" class="d-block w-100" alt="...">
-                </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-        </section>
-        <section class="m-5 mb-2 seccion-catalogo">
-            <div class="d-flex catalogo-title">
-                <h3 class="px-5">Vinos</h3>
-                <a href="./views/vino.html" class="pt-2 catalogo-link">Ver más</a>
-            </div>
-            <div class="d-flex justify-content-evenly catalogo-list">
-                <div class="card" style="width: 18rem;">
-                    <img src="./assets/Vino/1.webp" class="card-img-top" alt="vino">
-                    <div class="card-body">
-                    <h5 class="card-title">$111111</h5>
-                    <p class="card-text">Vino Angelica Zapata Malbec 750cc</p>
-                    <a href="#" class="btn btn-primary">Agregar</a>
-                    </div>
-                </div>
-                <div class="card" style="width: 18rem;">
-                    <img src="./assets/Vino/1.webp" class="card-img-top" alt="vino">
-                    <div class="card-body">
-                    <h5 class="card-title">$111111</h5>
-                    <p class="card-text">Vino Angelica Zapata Malbec 750cc</p>
-                    <a href="#" class="btn btn-primary">Agregar</a>
-                    </div>
-                </div>
-                <div class="card" style="width: 18rem;">
-                    <img src="./assets/Vino/1.webp" class="card-img-top" alt="vino">
-                    <div class="card-body">
-                    <h5 class="card-title">$111111</h5>
-                    <p class="card-text">Vino Angelica Zapata Malbec 750cc</p>
-                    <a href="#" class="btn btn-primary">Agregar</a>
-                    </div>
-                </div>
-                <div class="card" style="width: 18rem;">
-                    <img src="./assets/Vino/1.webp" class="card-img-top" alt="vino">
-                    <div class="card-body">
-                    <h5 class="card-title">$111111</h5>
-                    <p class="card-text">Vino Angelica Zapata Malbec 750cc</p>
-                    <a href="#" class="btn btn-primary">Agregar</a>
-                    </div>
-                </div>
-            </div>
+<html lang="es">
 
-            <div class="d-flex mt-5 mb-2 catalogo-title">
-                <h3 class="px-5">Whiskyes</h3>
-                <a href="./views/whisky.html" class="pt-2 catalogo-link">Ver más</a>
-            </div>
-            <div class="d-flex justify-content-evenly catalogo-list">
-                <div class="card" style="width: 18rem;">
-                    <img src="./assets/Whiskyes/1w.webp" class="card-img-top" alt="whisky">
-                    <div class="card-body">
-                    <h5 class="card-title">$111111</h5>
-                    <p class="card-text">Whisky Johnny Walker Black Label 750 ml</p>
-                    <a href="#" class="btn btn-primary">Agregar</a>
-                    </div>
-                </div>
-                <div class="card" style="width: 18rem;">
-                    <img src="./assets/Whiskyes/1w.webp" class="card-img-top" alt="whisky">
-                    <div class="card-body">
-                    <h5 class="card-title">$111111</h5>
-                    <p class="card-text">Whisky Johnny Walker Black Label 750 ml</p>
-                    <a href="#" class="btn btn-primary">Agregar</a>
-                    </div>
-                </div>
-                <div class="card" style="width: 18rem;">
-                    <img src="./assets/Whiskyes/1w.webp" class="card-img-top" alt="whisky">
-                    <div class="card-body">
-                    <h5 class="card-title">$111111</h5>
-                    <p class="card-text">Whisky Johnny Walker Black Label 750 ml</p>
-                    <a href="#" class="btn btn-primary">Agregar</a>
-                    </div>
-                </div>
-                <div class="card" style="width: 18rem;">
-                    <img src="./assets/Whiskyes/1w.webp" class="card-img-top" alt="whisky">
-                    <div class="card-body">
-                    <h5 class="card-title">$111111</h5>
-                    <p class="card-text">Whisky Johnny Walker Black Label 750 ml</p>
-                    <a href="#" class="btn btn-primary">Agregar</a>
-                    </div>
-                </div>
-            </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Alta fiesta || Home</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
 
-            <div class="d-flex mt-5 mb-2 catalogo-title">
-                <h3 class="px-5">Espumantes</h3>
-                <a href="./views/espumante.html" class="pt-2 catalogo-link">Ver más</a>
-            </div>
-            <div class="d-flex justify-content-evenly catalogo-list">
-                <div class="card" style="width: 18rem;">
-                    <img src="./assets/Espumantes/1e.webp" class="card-img-top" alt="espumante">
-                    <div class="card-body">
-                    <h5 class="card-title">$111111</h5>
-                    <p class="card-text">Baron B Brut Nature Botella 750ml</p>
-                    <a href="#" class="btn btn-primary">Agregar</a>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">
+                        <!-- <img src="./assets/logo-social.png" alt="logo" class="logo"> -->
+                        <img src="./assets/logo.png" alt="logo" class="logo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="./views/vino.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Vinos
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="./views/vino.html">Malbec</a></li>
+                                    <li><a class="dropdown-item" href="./views/vino.html">Cabernet Sauvignon</a></li>
+                                    <li><a class="dropdown-item" href="./views/vino.html">Chardonnay</a></li>
+                                    <li><a class="dropdown-item" href="./views/vino.html">Torrontes</a></li>
+                                    <li><a class="dropdown-item" href="./views/vino.html">Ver más</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="./views/whisky.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Whiskies
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="./views/whisky.html">Nacionales</a></li>
+                                    <li><a class="dropdown-item" href="./views/whisky.html">Importados</a></li>
+                                    <li><a class="dropdown-item" href="./views/whisky.html">Ver más</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="./views/espumante.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Espumantes
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="./views/espumante.html">Extra Brut</a></li>
+                                    <li><a class="dropdown-item" href="./views/espumante.html">Brut</a></li>
+                                    <li><a class="dropdown-item" href="./views/espumante.html">Rosé</a></li>
+                                    <li><a class="dropdown-item" href="./views/espumante.html">Ver más</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="./views/cerveza.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Cervezas
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="./views/cerveza.html">Artesanales</a></li>
+                                    <li><a class="dropdown-item" href="./views/cerveza.html">Nacionales</a></li>
+                                    <li><a class="dropdown-item" href="./views/cerveza.html">Importadas</a></li>
+                                    <li><a class="dropdown-item" href="./views/cerveza.html">Ver más</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="./views/bebidas.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Otras Bebidas
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="./views/bebidas.html">Licores</a></li>
+                                    <li><a class="dropdown-item" href="./views/bebidas.html">Vodka</a></li>
+                                    <li><a class="dropdown-item" href="./views/bebidas.html">Ron</a></li>
+                                    <li><a class="dropdown-item" href="./views/bebidas.html">Aperitivos</a></li>
+                                    <li><a class="dropdown-item" href="./views/bebidas.html">Ver más</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                        <div class="nav-icon">
+                            <a href="./contact.html" class="icon-contact"><i class="fa-solid fa-user"></i></a>
+                            <a href="./carrito.html" class="icon-cart"><i class="fa-solid fa-cart-shopping"></i></a>
+                        </div>
                     </div>
                 </div>
-                <div class="card" style="width: 18rem;">
-                    <img src="./assets/Espumantes/1e.webp" class="card-img-top" alt="espumante">
-                    <div class="card-body">
-                    <h5 class="card-title">$111111</h5>
-                    <p class="card-text">Baron B Brut Nature Botella 750ml</p>
-                    <a href="#" class="btn btn-primary">Agregar</a>
+            </nav>
+        </header>
+        <main>
+            <section class="carrousel">
+                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./assets/HEINE.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./assets/A.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./assets/B.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./assets/c.jpg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </section>
+            <section class="m-5 mb-2 seccion-catalogo">
+                <div class="d-flex catalogo-title">
+                    <h3 class="px-5">Vinos</h3>
+                    <a href="./views/vino.html" class="pt-2 catalogo-link">Ver más</a>
+                </div>
+                <div class="d-flex justify-content-evenly catalogo-list">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./assets/Vino/vino1.png" class="card-img-top" alt="vino">
+                        <div class="card-body">
+                            <h5 class="card-title">$111111</h5>
+                            <p class="card-text">Vino Angelica Zapata Malbec 750cc</p>
+                            <a href="#" class="btn btn-primary">Agregar</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="./assets/Vino/vino2.png" class="card-img-top" alt="vino">
+                        <div class="card-body">
+                            <h5 class="card-title">$111111</h5>
+                            <p class="card-text">Vino Angelica Zapata Malbec 750cc</p>
+                            <a href="#" class="btn btn-primary">Agregar</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="./assets/Vino/vino3.png" class="card-img-top" alt="vino">
+                        <div class="card-body">
+                            <h5 class="card-title">$111111</h5>
+                            <p class="card-text">Vino Angelica Zapata Malbec 750cc</p>
+                            <a href="#" class="btn btn-primary">Agregar</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="./assets/Vino/vino4.png" class="card-img-top" alt="vino">
+                        <div class="card-body">
+                            <h5 class="card-title">$111111</h5>
+                            <p class="card-text">Vino Angelica Zapata Malbec 750cc</p>
+                            <a href="#" class="btn btn-primary">Agregar</a>
+                        </div>
                     </div>
                 </div>
-                <div class="card" style="width: 18rem;">
-                    <img src="./assets/Espumantes/1e.webp" class="card-img-top" alt="espumante">
-                    <div class="card-body">
-                    <h5 class="card-title">$111111</h5>
-                    <p class="card-text">Baron B Brut Nature Botella 750ml</p>
-                    <a href="#" class="btn btn-primary">Agregar</a>
-                    </div>
-                </div>
-                <div class="card" style="width: 18rem;">
-                    <img src="./assets/Espumantes/1e.webp" class="card-img-top" alt="espumante">
-                    <div class="card-body">
-                    <h5 class="card-title">$111111</h5>
-                    <p class="card-text">Baron B Brut Nature Botella 750ml</p>
-                    <a href="#" class="btn btn-primary">Agregar</a>
-                    </div>
-                </div>
-            </div>
 
-            <div class="d-flex mt-5 mb-2 catalogo-title">
-                <h3 class="px-5">Cervezas</h3>
-                <a href="./views/cerveza.html" class="pt-2 catalogo-link">Ver más</a>
-            </div>
-            <div class="d-flex justify-content-evenly catalogo-list">
-                <div class="card" style="width: 18rem;">
-                    <img src="./assets/Cervezas/1c.webp" class="card-img-top" alt="cerveza">
-                    <div class="card-body">
-                    <h5 class="card-title">$111111</h5>
-                    <p class="card-text">Cerveza Corona Botella 710ml</p>
-                    <a href="#" class="btn btn-primary">Agregar</a>
+                <div class="d-flex mt-5 mb-2 catalogo-title">
+                    <h3 class="px-5">Whiskies</h3>
+                    <a href="./views/whisky.html" class="pt-2 catalogo-link">Ver más</a>
+                </div>
+                <div class="d-flex justify-content-evenly catalogo-list">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./assets/Whiskies/whisky1.png" class="card-img-top" alt="whisky">
+                        <div class="card-body">
+                            <h5 class="card-title">$111111</h5>
+                            <p class="card-text">Whisky Johnny Walker Black Label 750 ml</p>
+                            <a href="#" class="btn btn-primary">Agregar</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="./assets/Whiskies/whisky2.png" class="card-img-top" alt="whisky">
+                        <div class="card-body">
+                            <h5 class="card-title">$111111</h5>
+                            <p class="card-text">Whisky Johnny Walker Black Label 750 ml</p>
+                            <a href="#" class="btn btn-primary">Agregar</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="./assets/Whiskies/whisky3.png" class="card-img-top" alt="whisky">
+                        <div class="card-body">
+                            <h5 class="card-title">$111111</h5>
+                            <p class="card-text">Whisky Johnny Walker Black Label 750 ml</p>
+                            <a href="#" class="btn btn-primary">Agregar</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="./assets/Whiskies/whisky4.png" class="card-img-top" alt="whisky">
+                        <div class="card-body">
+                            <h5 class="card-title">$111111</h5>
+                            <p class="card-text">Whisky Johnny Walker Black Label 750 ml</p>
+                            <a href="#" class="btn btn-primary">Agregar</a>
+                        </div>
                     </div>
                 </div>
-                <div class="card" style="width: 18rem;">
-                    <img src="./assets/Cervezas/1c.webp" class="card-img-top" alt="cerveza">
-                    <div class="card-body">
-                    <h5 class="card-title">$111111</h5>
-                    <p class="card-text">Cerveza Corona Botella 710ml</p>
-                    <a href="#" class="btn btn-primary">Agregar</a>
-                    </div>
-                </div>
-                <div class="card" style="width: 18rem;">
-                    <img src="./assets/Cervezas/1c.webp" class="card-img-top" alt="cerveza">
-                    <div class="card-body">
-                    <h5 class="card-title">$111111</h5>
-                    <p class="card-text">Cerveza Corona Botella 710ml</p>
-                    <a href="#" class="btn btn-primary">Agregar</a>
-                    </div>
-                </div>
-                <div class="card" style="width: 18rem;">
-                    <img src="./assets/Cervezas/1c.webp" class="card-img-top" alt="cerveza">
-                    <div class="card-body">
-                    <h5 class="card-title">$111111</h5>
-                    <p class="card-text">Cerveza Corona Botella 710ml</p>
-                    <a href="#" class="btn btn-primary">Agregar</a>
-                    </div>
-                </div>
-            </div>
 
-            <div class="d-flex mt-5 mb-2 catalogo-title">
-                <h3 class="px-5">Otras Bebidas</h3>
-                <a href="./views/bebidas.html" class="pt-2 catalogo-link">Ver más</a>
-            </div>
-            <div class="d-flex justify-content-evenly catalogo-list">
-                <div class="card" style="width: 18rem;">
-                    <img src="./assets/Otras/1o.webp" class="card-img-top" alt="otras-bebidas">
-                    <div class="card-body">
-                    <h5 class="card-title">$111111</h5>
-                    <p class="card-text">Absolut Vodka 700ml</p>
-                    <a href="#" class="btn btn-primary">Agregar</a>
+                <div class="d-flex mt-5 mb-2 catalogo-title">
+                    <h3 class="px-5">Espumantes</h3>
+                    <a href="./views/espumante.html" class="pt-2 catalogo-link">Ver más</a>
+                </div>
+                <div class="d-flex justify-content-evenly catalogo-list">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./assets/Espumantes/espumante1.png" class="card-img-top" alt="espumante">
+                        <div class="card-body">
+                            <h5 class="card-title">$111111</h5>
+                            <p class="card-text">Baron B Brut Nature Botella 750ml</p>
+                            <a href="#" class="btn btn-primary">Agregar</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="./assets/Espumantes/espumante2.png" class="card-img-top" alt="espumante">
+                        <div class="card-body">
+                            <h5 class="card-title">$111111</h5>
+                            <p class="card-text">Baron B Brut Nature Botella 750ml</p>
+                            <a href="#" class="btn btn-primary">Agregar</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="./assets/Espumantes/espumante3.png" class="card-img-top" alt="espumante">
+                        <div class="card-body">
+                            <h5 class="card-title">$111111</h5>
+                            <p class="card-text">Baron B Brut Nature Botella 750ml</p>
+                            <a href="#" class="btn btn-primary">Agregar</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="./assets/Espumantes/espumante4.png" class="card-img-top" alt="espumante">
+                        <div class="card-body">
+                            <h5 class="card-title">$111111</h5>
+                            <p class="card-text">Baron B Brut Nature Botella 750ml</p>
+                            <a href="#" class="btn btn-primary">Agregar</a>
+                        </div>
                     </div>
                 </div>
-                <div class="card" style="width: 18rem;">
-                    <img src="./assets/Otras/1o.webp" class="card-img-top" alt="otras-bebidas">
-                    <div class="card-body">
-                    <h5 class="card-title">$111111</h5>
-                    <p class="card-text">Absolut Vodka 700ml</p>
-                    <a href="#" class="btn btn-primary">Agregar</a>
+
+                <div class="d-flex mt-5 mb-2 catalogo-title">
+                    <h3 class="px-5">Cervezas</h3>
+                    <a href="./views/cerveza.html" class="pt-2 catalogo-link">Ver más</a>
+                </div>
+                <div class="d-flex justify-content-evenly catalogo-list">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./assets/Cervezas/cerveza1.png" class="card-img-top" alt="cerveza">
+                        <div class="card-body">
+                            <h5 class="card-title">$111111</h5>
+                            <p class="card-text">Cerveza Corona Botella 710ml</p>
+                            <a href="#" class="btn btn-primary">Agregar</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="./assets/Cervezas/cerveza2.png" class="card-img-top" alt="cerveza">
+                        <div class="card-body">
+                            <h5 class="card-title">$111111</h5>
+                            <p class="card-text">Cerveza Corona Botella 710ml</p>
+                            <a href="#" class="btn btn-primary">Agregar</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="./assets/Cervezas/cerveza3.png" class="card-img-top" alt="cerveza">
+                        <div class="card-body">
+                            <h5 class="card-title">$111111</h5>
+                            <p class="card-text">Cerveza Corona Botella 710ml</p>
+                            <a href="#" class="btn btn-primary">Agregar</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="./assets/Cervezas/cerveza4.png" class="card-img-top" alt="cerveza">
+                        <div class="card-body">
+                            <h5 class="card-title">$111111</h5>
+                            <p class="card-text">Cerveza Corona Botella 710ml</p>
+                            <a href="#" class="btn btn-primary">Agregar</a>
+                        </div>
                     </div>
                 </div>
-                <div class="card" style="width: 18rem;">
-                    <img src="./assets/Otras/1o.webp" class="card-img-top" alt="otras-bebidas">
-                    <div class="card-body">
-                    <h5 class="card-title">$111111</h5>
-                    <p class="card-text">Absolut Vodka 700ml</p>
-                    <a href="#" class="btn btn-primary">Agregar</a>
+
+                <div class="d-flex mt-5 mb-2 catalogo-title">
+                    <h3 class="px-5">Otras Bebidas</h3>
+                    <a href="./views/bebidas.html" class="pt-2 catalogo-link">Ver más</a>
+                </div>
+                <div class="d-flex justify-content-evenly catalogo-list">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./assets/Otras/otras1.png" class="card-img-top" alt="otras-bebidas">
+                        <div class="card-body">
+                            <h5 class="card-title">$111111</h5>
+                            <p class="card-text">Absolut Vodka 700ml</p>
+                            <a href="#" class="btn btn-primary">Agregar</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="./assets/Otras/otras2.png" class="card-img-top" alt="otras-bebidas">
+                        <div class="card-body">
+                            <h5 class="card-title">$111111</h5>
+                            <p class="card-text">Absolut Vodka 700ml</p>
+                            <a href="#" class="btn btn-primary">Agregar</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="./assets/Otras/otras3.png" class="card-img-top" alt="otras-bebidas">
+                        <div class="card-body">
+                            <h5 class="card-title">$111111</h5>
+                            <p class="card-text">Absolut Vodka 700ml</p>
+                            <a href="#" class="btn btn-primary">Agregar</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="./assets/Otras/otras4.png" class="card-img-top" alt="otras-bebidas">
+                        <div class="card-body">
+                            <h5 class="card-title">$111111</h5>
+                            <p class="card-text">Absolut Vodka 700ml</p>
+                            <a href="#" class="btn btn-primary">Agregar</a>
+                        </div>
                     </div>
                 </div>
-                <div class="card" style="width: 18rem;">
-                    <img src="./assets/Otras/1o.webp" class="card-img-top" alt="otras-bebidas">
-                    <div class="card-body">
-                    <h5 class="card-title">$111111</h5>
-                    <p class="card-text">Absolut Vodka 700ml</p>
-                    <a href="#" class="btn btn-primary">Agregar</a>
+            </section>
+            <section class="mt-5 card-payments">
+                <div class="container text-center">
+                    <div class="row">
+                        <div class="col">
+                            <div class="icon-payment">
+                                <img src="./assets/3643737-cart-drop-shop-shopping-trolly_113425.png" alt="shop">
+                            </div>
+                            <div class="content-payment">
+                                <h3>Elegi los productos que vas a comprar</h3>
+                                <p>Si queres mas de uno, sumalos a tu carrito</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="icon-payment">
+                                <img src="./assets/creditcard_78919.png" alt="card-credit">
+                            </div>
+                            <div class="content-payment">
+                                <h3>Paga con el medio que quieras</h3>
+                                <p>Compra con seguridad, tus datos estan encriptados</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="icon-payment">
+                                <img src="./assets/truck_13241.png" alt="box-send">
+                            </div>
+                            <div class="content-payment">
+                                <h3>Recibi el producto que esperas</h3>
+                                <p>Elegi donde preferis recibirlo ¡y listo!</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section class="mt-5 card-payments">
-            <div class="container text-center">
+            </section>
+        </main>
+        <footer>
+            <div class="container">
                 <div class="row">
-                  <div class="col">
-                    <div class="icon-payment">
-                        <img src="./assets/3643737-cart-drop-shop-shopping-trolly_113425.png" alt="shop">
+                    <div class="col">
+                        <h3 class="title-footer">Categoria</h3>
+                        <ul class="ul-footer">
+                            <li><a href="./views/vino.html">Vino</a></li>
+                            <li><a href="./views/whisky.html">Whiskies</a></li>
+                            <li><a href="./views/espumante.html">Espumantes</a></li>
+                            <li><a href="./views/cerveza.html">Cervezas</a></li>
+                            <li><a href="./views/bebidas.html">Otra Bebidas</a></li>
+                        </ul>
                     </div>
-                    <div class="content-payment">
-                        <h3>Elegi los productos que vas a comprar</h3>
-                        <p>Si queres mas de uno, sumalos a tu carrito</p>
+                    <div class="col">
+                        <h3 class="title-footer">Contacto</h3>
+                        <ul class="ul-footer icon-contacto">
+                            <li><i class="fa-regular fa-map"></i>Av. Francisco Beiró 2328, Devoto</li>
+                            <li><i class="fa-regular fa-flag"></i>Lunes a Viernes de 8 a 17Hs</li>
+                            <li><i class="fa-regular fa-envelope"></i>consultas@drinkshop.com.ar</li>
+                            <li><i class="fa-solid fa-mobile-screen-button"></i>11 6052 0721</li>
+                        </ul>
                     </div>
-                  </div>
-                  <div class="col">
-                    <div class="icon-payment">
-                        <img src="./assets/creditcard_78919.png" alt="card-credit">
+                    <div class="col">
+                        <h3>Seguinos</h3>
+                        <div class="social-media">
+                            <a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.twitter.com"><i class="fa-brands fa-twitter"></i></a>
+                        </div>
                     </div>
-                    <div class="content-payment">
-                        <h3>Paga con el medio que quieras</h3>
-                        <p>Compra con seguridad, tus datos estan encriptados</p>
-                    </div>
-                  </div>
-                  <div class="col">
-                    <div class="icon-payment">
-                        <img src="./assets/truck_13241.png" alt="box-send">
-                    </div>
-                    <div class="content-payment">
-                        <h3>Recibi el producto que esperas</h3>
-                        <p>Elegi donde preferis recibirlo ¡y listo!</p>
-                    </div>
-                  </div>
                 </div>
-              </div>
-        </section>
-    </main>
-    <footer>
-        <div class="container">
-            <div class="row">
-              <div class="col">
-                <h3 class="title-footer">Categoria</h3>
-                <ul class="ul-footer">
-                    <li><a href="./views/vino.html">Vino</a></li>
-                    <li><a href="./views/whisky.html">Whiskyes</a></li>
-                    <li><a href="./views/espumante.html">Espumantes</a></li>
-                    <li><a href="./views/cerveza.html">Cervezas</a></li>
-                    <li><a href="./views/bebidas.html">Otra Bebidas</a></li>
-                </ul>
-              </div>
-              <div class="col">
-                <h3 class="title-footer">Contacto</h3>
-                <ul class="ul-footer icon-contacto">
-                    <li><i class="fa-regular fa-map"></i>Av. Francisco Beiró 2328, Devoto</li>
-                    <li><i class="fa-regular fa-flag"></i>Lunes a Viernes de 8 a 17Hs</li>
-                    <li><i class="fa-regular fa-envelope"></i>consultas@drinkshop.com.ar</li>
-                    <li><i class="fa-solid fa-mobile-screen-button"></i>11 6052 0721</li>
-                </ul>
-              </div>
-              <div class="col">
-                <h3>Seguinos</h3>
-                <div class="social-media">
-                    <a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://www.twitter.com"><i class="fa-brands fa-twitter"></i></a>
-                </div>
-              </div>
             </div>
-          </div>
-    </footer>
+        </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-</body>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    </body>
+
 </html>
