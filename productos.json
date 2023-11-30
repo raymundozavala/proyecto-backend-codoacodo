@@ -1,0 +1,31 @@
+{
+    "productos": [
+      {
+        "nombre": "Chang",
+        "tipo": "Cerveza",
+        "estilo": "Lager Beer",
+        "origen": "Tailandia",
+        "precio": 15.99,
+        "imagen": "./assets/Cervezas/cerveza1.png",
+        "disponible": true
+      },
+      {
+        "nombre": "Singha Lager Beer",
+        "tipo": "Cerveza",
+        "estilo": "Lager Beer",
+        "origen": "Tailandia",
+        "precio": 15.99,
+        "imagen": "./assets/Cervezas/cerveza2.png",
+        "disponible": true
+      },
+      {
+        "nombre": "Duff",
+        "tipo": "Cerveza",
+        "estilo": "Lager Beer",
+        "origen": "Brasil",
+        "precio": 15.99,
+        "imagen": "./assets/Cervezas/cerveza3.png",
+        "disponible": true
+      }
+    ]
+  }
