@@ -8,7 +8,7 @@ routes = Blueprint('routes', __name__)
 @routes.route('/productos')
 def mostrar_productos():
     productos = Producto.query.all()  # Obtener todos los productos de la base de datos
-    return render_template('productos.html', productos=productos)
+    return render_template('vino.html', productos=productos)
 
 @routes.route('/productos', methods=['GET'])
 def obtener_productos():

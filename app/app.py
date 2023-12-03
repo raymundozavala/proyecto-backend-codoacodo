@@ -2,7 +2,7 @@ from flask import Flask, render_template
 from flask_cors import CORS
 from app.routes import routes  # Importa las rutas desde el archivo routes.py
 
-app = Flask(__name__)
+app = Flask(__name__,static_folder='static')
 CORS(app)
 
 # Resto de configuraciones...
