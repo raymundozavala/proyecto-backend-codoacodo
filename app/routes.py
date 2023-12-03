@@ -1,5 +1,6 @@
 from flask import Blueprint, request, jsonify, render_template
 from app.models import Producto
+from app import db
 
 routes = Blueprint('routes', __name__)
 
@@ -14,9 +15,8 @@ def obtener_productos():
     productos = Producto.query.all()
     return jsonify([producto.__dict__ for producto in productos])
 
-
 # Creación de un nuevo producto
-@app.route('/productos', methods=['POST'])
+@routes.route('/productos', methods=['POST'])
 def crear_producto():
     data = request.get_json()
     nuevo_producto = Producto(
