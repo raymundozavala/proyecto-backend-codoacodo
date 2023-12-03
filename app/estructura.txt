@@ -1,0 +1,19 @@
+categorias: vinos, whiskyes, espumantes, cervezas, otras
+sub categorias vino: malbec, cabernetsauvignon, chardonnay, torrontes
+sub categorias whiskyes: nacionales, importados
+sub categorias espumantes: extrabrut, brut, rose
+sub categorias cervezas: artesanales, nacionales, importadas
+sub categorias otras: licores, vodka, ron, aperitivos
+
+atributos de cada producto: categoria (vino, whisky, espumante, cerveza), nombre, subcategoria, tamaño en cc, precio
+
+Estructura app
+
+- app/
+   - static/
+   - templates/
+   - __init__.py
+   - models.py
+   - routes.py
+   - config.py
+- run.py
