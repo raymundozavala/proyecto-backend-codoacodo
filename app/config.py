@@ -9,7 +9,7 @@ DB_PASSWORD = 'Paste2023*'
 DB_HOST = 'localhost'
 # DB_HOST = cacgrupo5.mysql.pythonanywhere-services.com
 DB_NAME = 'productos_db'
-# DB_NAME = 'cacgrupo5$default'
+# DB_NAME = 'cacgrupo5$productos_db'
 
 # Cadena de conexión para MySQL
 SQLALCHEMY_DATABASE_URI = f'mysql+pymysql://{DB_USERNAME}:{DB_PASSWORD}@{DB_HOST}/{DB_NAME}'
