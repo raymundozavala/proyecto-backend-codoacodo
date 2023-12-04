@@ -1,21 +1,27 @@
 from flask import Blueprint, request, jsonify, render_template
-from app.models import Producto
+
 from app import db
+
 
 routes = Blueprint('routes', __name__)
 
-# Ruta para mostrar los productos
-@routes.route('/productos')
+
+@routes.route('/')
+def index():
+    return render_template('index.html')
+
+
+@routes.route('/vinos')
 def mostrar_productos():
     productos = Producto.query.all()  # Obtener todos los productos de la base de datos
     return render_template('vino.html', productos=productos)
+
 
 @routes.route('/productos', methods=['GET'])
 def obtener_productos():
     productos = Producto.query.all()
     return jsonify([producto.__dict__ for producto in productos])
 
-# Creación de un nuevo producto
 
 @routes.route('/productos', methods=['POST'])
 def crear_producto():
@@ -32,7 +38,6 @@ def crear_producto():
     db.session.commit()
     return jsonify({"mensaje": "Producto creado exitosamente"})
 
-# Modificación de un producto
 
 @routes.route('/productos/<int:producto_id>', methods=['PUT'])
 def modificar_producto(producto_id):
@@ -48,7 +53,6 @@ def modificar_producto(producto_id):
     db.session.commit()
     return jsonify({"mensaje": "Producto modificado exitosamente"})
 
-# Eliminación de un producto.
 
 @routes.route('/productos/<int:producto_id>', methods=['DELETE'])
 def eliminar_producto(producto_id):

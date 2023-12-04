@@ -12,7 +12,7 @@
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
-                <a class="navbar-brand" href="../index.html">
+                <a class="navbar-brand" href="/">
                     <img src="{{ url_for('static', filename='assets/logo-social.png') }}" alt="logo" class="logo">
                 </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"      data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -21,15 +21,15 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="./vino.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="/vinos" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Vinos
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="./vino.html">Malbec</a></li>
-                            <li><a class="dropdown-item" href="./vino.html">Cabernet Sauvignon</a></li>
-                            <li><a class="dropdown-item" href="./vino.html">Chardonnay</a></li>
-                            <li><a class="dropdown-item" href="./vino.html">Torrontes</a></li>
-                            <li><a class="dropdown-item" href="./vino.html">Ver más</a></li>
+                            <li><a class="dropdown-item" href="/vinos">Malbec</a></li>
+                            <li><a class="dropdown-item" href="/vinos">Cabernet Sauvignon</a></li>
+                            <li><a class="dropdown-item" href="/vinos">Chardonnay</a></li>
+                            <li><a class="dropdown-item" href="/vinos">Torrontes</a></li>
+                            <li><a class="dropdown-item" href="/vinos">Ver más</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
@@ -154,23 +154,25 @@
                 <div class="col-9 my-5">
                     <div class="d-flex flex-wrap">
                         {% for producto in productos %}
+                        {% if producto.categoria == 'vino' %}
                         <div class="col pb-2">
                             <div class="col">
                                 <div class="card" style="width: 10rem;">
-                                    <img src="/assets/Vino/1.webp" class="card-img-top" alt="vino">
+                                    <img src="{{ url_for('static', filename='/assets/Vino/1.webp') }}" class="card-img-top" alt="vino">
                                     <div class="card-body text-center">
-                                        <h5 class="card-title">{{ producto.nombre }}</h5>
+                                        <h5 class="card-title"> {{ producto.nombre }}</h5>
                                         <h5 class="card-title">${{ producto.precio }}</h5>
                                         <div class="d-flex justify-content-around">
                                             <a href="#" class="text-decoration-none resta p-2">-</a>
                                             <a href="#" class="text-decoration-none count p-2">0</a>
                                             <a href="#" class="text-decoration-none suma p-2">+</a>
                                         </div>
-                                        <button type="button" class="btn btn-primary w-75">Agregar</button>
+                                        <button type="button" class="btn btn-primary w-75"> Agregar</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        {% endif %}
                         {% endfor %}
                     </div>
                 </div>
@@ -186,7 +188,7 @@
               <div class="col">
                 <h3 class="title-footer">Categoria</h3>
                 <ul class="ul-footer">
-                    <li><a href="./vino.html">Vino</a></li>
+                    <li><a href="/vinos">Vino</a></li>
                     <li><a href="./whisky.html">Whiskyes</a></li>
                     <li><a href="./espumante.html">Espumantes</a></li>
                     <li><a href="./cerveza.html">Cervezas</a></li>

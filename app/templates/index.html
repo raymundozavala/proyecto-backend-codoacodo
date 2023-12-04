@@ -6,14 +6,14 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html">
-                    <img src="./assets/logo-social.png" alt="logo" class="logo">
+                    <img src="{{ url_for('static', filename='assets/logo-social.png') }}" alt="logo" class="logo">
                 </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"      data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -29,7 +29,7 @@
                             <li><a class="dropdown-item" href="./views/vino.html">Cabernet Sauvignon</a></li>
                             <li><a class="dropdown-item" href="./views/vino.html">Chardonnay</a></li>
                             <li><a class="dropdown-item" href="./views/vino.html">Torrontes</a></li>
-                            <li><a class="dropdown-item" href="./views/vino.html">Ver más</a></li>
+                            <li><a class="dropdown-item" href="/productos">Ver más</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
@@ -119,11 +119,11 @@
         <section class="m-5 mb-2 seccion-catalogo">
             <div class="d-flex catalogo-title">
                 <h3 class="px-5">Vinos</h3>
-                <a href="./views/vino.html" class="pt-2 catalogo-link">Ver más</a>
+                <a href="./vinos" class="pt-2 catalogo-link">Ver más</a>
             </div>
             <div class="d-flex justify-content-evenly catalogo-list">
                 <div class="card" style="width: 18rem;">
-                    <img src="./assets/Vino/1.webp" class="card-img-top" alt="vino">
+                    <img src="{{ url_for('static', filename='/assets/Vino/1.webp') }}" class="card-img-top" alt="vino">
                     <div class="card-body">
                     <h5 class="card-title">$111111</h5>
                     <p class="card-text">Vino Angelica Zapata Malbec 750cc</p>
@@ -131,7 +131,7 @@
                     </div>
                 </div>
                 <div class="card" style="width: 18rem;">
-                    <img src="./assets/Vino/1.webp" class="card-img-top" alt="vino">
+                    <img src="{{ url_for('static', filename='/assets/Vino/1.webp') }}" class="card-img-top" alt="vino">
                     <div class="card-body">
                     <h5 class="card-title">$111111</h5>
                     <p class="card-text">Vino Angelica Zapata Malbec 750cc</p>
@@ -139,7 +139,7 @@
                     </div>
                 </div>
                 <div class="card" style="width: 18rem;">
-                    <img src="./assets/Vino/1.webp" class="card-img-top" alt="vino">
+                    <img src="{{ url_for('static', filename='/assets/Vino/1.webp') }}" class="card-img-top" alt="vino">
                     <div class="card-body">
                     <h5 class="card-title">$111111</h5>
                     <p class="card-text">Vino Angelica Zapata Malbec 750cc</p>
@@ -147,7 +147,7 @@
                     </div>
                 </div>
                 <div class="card" style="width: 18rem;">
-                    <img src="./assets/Vino/1.webp" class="card-img-top" alt="vino">
+                    <img src="{{ url_for('static', filename='/assets/Vino/1.webp') }}" class="card-img-top" alt="vino">
                     <div class="card-body">
                     <h5 class="card-title">$111111</h5>
                     <p class="card-text">Vino Angelica Zapata Malbec 750cc</p>
