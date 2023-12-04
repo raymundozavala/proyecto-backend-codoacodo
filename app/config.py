@@ -6,7 +6,7 @@ DEBUG = True
 DB_USERNAME = 'cacgrupo5'
 DB_PASSWORD = 'Paste2023*'
 DB_HOST = 'localhost'
-# DB_HOST = cacgrupo5.mysql.pythonanywhere-services.com
+# DB_HOST = 'cacgrupo5.mysql.pythonanywhere-services.com'
 DB_NAME = 'productos_db'
 # DB_NAME = 'cacgrupo5$productos_db'
 
