@@ -1,6 +1,8 @@
+import json
 from flask import Flask, Blueprint, request, jsonify, render_template
 from flask_sqlalchemy import SQLAlchemy
 from flask_cors import CORS
+from marshmallow import Schema, fields
 
 # Importar configuración
 from config import SQLALCHEMY_DATABASE_URI
@@ -40,10 +42,22 @@ def mostrar_productos():
     productos = Producto.query.all()  # Obtener todos los productos de la base de datos
     return render_template('vino.html', productos=productos)
 
-@routes.route('/productos', methods=['GET'])
+@app.route('/productos', methods=['GET'])
 def obtener_productos():
     productos = Producto.query.all()
-    return jsonify([producto.__dict__ for producto in productos])
+    return jsonify({
+        'productos': [
+            {
+                'id': producto.id,
+                'categoria': producto.categoria,
+                'nombre': producto.nombre,
+                'subcategoria': producto.subcategoria,
+                'tamano_cc': producto.tamano_cc,
+                'precio': producto.precio
+            }
+            for producto in productos
+        ]
+    })
 
 @routes.route('/productos', methods=['POST'])
 def crear_producto():
