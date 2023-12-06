@@ -1,8 +1,6 @@
-import json
 from flask import Flask, Blueprint, request, jsonify, render_template
 from flask_sqlalchemy import SQLAlchemy
 from flask_cors import CORS
-from marshmallow import Schema, fields
 
 # Importar configuración
 from config import SQLALCHEMY_DATABASE_URI
@@ -26,6 +24,7 @@ class Producto(db.Model):
     subcategoria = db.Column(db.String(100))
     tamano_cc = db.Column(db.Integer)
     precio = db.Column(db.Float)
+    imagen = db.Column(db.String(100))
 
     def __repr__(self):
         return f"Producto: {self.nombre}"
@@ -53,11 +52,13 @@ def obtener_productos():
                 'nombre': producto.nombre,
                 'subcategoria': producto.subcategoria,
                 'tamano_cc': producto.tamano_cc,
-                'precio': producto.precio
+                'precio': producto.precio,
+                'imagen': producto.imagen
             }
             for producto in productos
         ]
     })
+
 
 @routes.route('/productos', methods=['POST'])
 def crear_producto():
@@ -68,7 +69,8 @@ def crear_producto():
         nombre=data['nombre'],
         subcategoria=data['subcategoria'],
         tamano_cc=data['tamano_cc'],
-        precio=data['precio']
+        precio=data['precio'],
+        imagen=data['imagen']
     )
     db.session.add(nuevo_producto)
     db.session.commit()
@@ -84,6 +86,7 @@ def modificar_producto(producto_id):
     producto.subcategoria = data.get('subcategoria', producto.subcategoria)
     producto.tamano_cc = data.get('tamano_cc', producto.tamano_cc)
     producto.precio = data.get('precio', producto.precio)
+    producto.imagen = data.get('imagen',producto.imagen)
 
     db.session.commit()
     return jsonify({"mensaje": "Producto modificado exitosamente"})
